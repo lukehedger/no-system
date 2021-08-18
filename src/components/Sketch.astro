@@ -1,0 +1,26 @@
+---
+export interface Props {
+  date: string;
+  file: string;
+  title: string;
+}
+const { date, file, title } = Astro.props;
+---
+<div>
+  <img alt={title} src={file} />
+
+  <h3>{title}</h3>
+
+  <p>{date}</p>
+</div>
+
+<style>
+    div {
+        padding-top: 2em;
+        line-height: 1.5;
+    }
+
+    img {
+
+    }
+</style>
